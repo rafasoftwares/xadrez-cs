@@ -1,17 +1,13 @@
 ﻿using System;
-using tabuleiro;
+using xadrez_console.tabuleiro;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace xadrez_console // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Posicao P;
-
-            P = new Posicao(3,4);
-
-            Console.WriteLine("Posição: " + P);
+            Tabuleiro tab = new(8, 8);
         }
     }
 }
